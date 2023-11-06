@@ -1,0 +1,6 @@
+bmi::Tell (RealFloat a) ->String
+bmiTell bmi
+  | bmi<=18.5="YOu are underweight!"
+  | bmi<=25.0="You are supposedly normal!"
+  | bmi<=30="You're fat!"
+  | otherwise ="Something wrong!"

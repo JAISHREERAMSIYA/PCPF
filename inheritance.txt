@@ -1,0 +1,28 @@
+//To write a program in C++ to implement inheritance
+#include<iostream.h>
+#include<conio.h>
+class Animal
+{
+public:
+void eat()
+{
+cout<<"Eating"<<endl;
+}
+};
+class Dog:Public Animal
+{
+public:
+void bark()
+{
+cout<<"Barking"<<endl;
+}
+};
+int main (void)
+{
+clrscr();
+Dog d1;
+d1.eat();
+d1.bark();
+getch();
+return 0;
+}

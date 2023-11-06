@@ -1,0 +1,50 @@
+//C++
+#include<iostream.h>
+#include<conio.h>
+class Shape
+{
+ public:
+ int a,b;
+ void get_data(int n,int m)
+ {
+  a=n;
+  b=m;
+  }
+  };
+  class Rectangle:public Shape
+  {
+  public:
+  int rect_area()
+  {
+  int result=a*b;
+  return result;
+  }
+  };
+  class Triangle:public Shape
+  {
+  public:
+  int triangle_area()
+  {
+  float result=0.5*a*b;
+  return result;
+  }
+  };
+  int main()
+  {
+  clrscr();
+  Rectangle r;
+  Triangle t;
+  int length,breadth,base,height;
+  cout<<"ENTER THE LENGTH AND BREADTH OF THE RECTANGLE: "<<endl;
+  cin>>length>>breadth;
+  r.get_data(length,breadth);
+  int m=r.rect_area();
+  cout<<"AREA OF RECTANGLE IS: "<<m<<endl;
+  cout<<"\nENTER THE BASE AND HEIGHT OGF TRIANGLE:"<<endl;
+  cin>>base>>height;
+  t.get_data(base,height);
+  float n=t.triangle_area();
+  cout<<"AREA OF THE TRIANGLE IS : "<<n<<endl;
+  getch();
+  return 0;
+  }

@@ -1,0 +1,37 @@
+Aim: To write a program in C++ to implement abstraction and encapsulation.
+
+Input:
+//To write a program in C++ to implement abstraction and encapsulation
+#include<iostream.h>
+#include<conio.h>
+class Adder
+{
+public:
+Adder(int i=0)//constructor
+{
+total=i;
+}
+void addNum(int number) //interface to outside world
+{
+ total+=number;
+}
+int getTotal() //interface to outside world
+ {
+ return total;
+ }
+ private:
+ int total; //hiddendata from outside world
+ };
+ int main()
+ {
+ Adder a;
+ a.addNum(10);
+ a.addNum(20);
+ a.addNum(30);
+ cout<<"Total="<<a.getTotal()<<endl;
+ getch();
+ return 0;
+ }
+
+Output:
+Total=60

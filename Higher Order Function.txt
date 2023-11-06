@@ -1,0 +1,17 @@
+ghci> applyTwice f x= f(f x)
+
+ghci> applyTwice (+ 3)10
+
+ghci> applyTwice(++ "  HAHA ")"HEY"
+
+ghci> applyTwice(" HAHA " ++)"HEY" 
+
+ghci> flip' f y x=f x y 
+
+ghci> flip'zip(1,2,3,4,5] "hello"
+
+ghci> flip' f y x=f x y
+
+ghci> flip fy x=f x y
+
+ghci> flip zip [1,2,3,4,5] "hello”

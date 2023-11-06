@@ -1,0 +1,26 @@
+?-[X,Y,Z]=[john, likes, mary].
+X = john,
+Y = likes,
+Z = mary.
+
+?-[[the, Y]|Z]=[[X,mine]. [is, there]].
+Y = mine,
+Z = [[is, there]],
+X = the.
+
+//length of list
+size([],0).
+size([_|T],N):-size(T,N1),
+N is N1+1.
+
+?-
+| size([1,2,3,4],N).
+
+
+//sumlist
+sumlist([],0).
+sumlist([H|T],N):-sumlist(T,N1),
+N is N1+H.
+
+?-
+| sumlist([1,2,3,4),N].
